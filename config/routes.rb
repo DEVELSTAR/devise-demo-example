@@ -6,5 +6,6 @@ Rails.application.routes.draw do
         confirmations: 'users/confirmations'
       }
   root 'home#index'
+  get '/confirmation_pending' => 'home#after_registration_path'
 end
 
